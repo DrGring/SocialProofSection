@@ -6,74 +6,134 @@ body {
     margin: 0;
     padding: 0;
     height: 1530px;
-    text-align: center;
     display: flex;
     justify-content: center;
-    background-image: url(images/bg-pattern-top-mobile.svg);
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-position: left top, bottom;
     background-repeat: no-repeat;
 }
+span{
+    font-weight: normal;
+    color: hsl(333, 80%, 67%);
+}
 
-.article{
+.article {
     margin-top: 80px;
     width: 328px;
     height: 1353px;
-    background-color:  rgba(255, 255, 255, 0);
 }
 
-.article_header{
+.article_header {
     width: 327px;
     margin-top: 0;
 }
-.article_header h1{
+.article_header__titre {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 44px;
-    line-height: 25px;
-    letter-spacing: 0.1px;
+    line-height: 23px;
+    letter-spacing: -1px;
     font-weight: bold;
+    font-size: 30px;
     color: hsl(300, 43%, 22%);
     width: 241px;
     height: 102px;
 }
-.article_header p{
+.article_header__paragraph {
     margin: 0;
     font-size: 17px;
-    width: 327px;
+    width: 315px;
+    line-height: 15x;
     height: 89px;
     color:hsl(303, 10%, 53%);
 }
 
-.article_body{
+.article_body {
     margin-top: 43px;
     width: 328px;
     height: 268px;
 }
 .article_body__box {
+    display: grid;
+    justify-content: center;
     background-color: hsl(300, 24%, 96%);
+    background-position: center;
     margin-bottom: 16px;
     border-radius: 8px;
     width: 328px;
     height: 78px;
 }
 .article_body__box__iconstar{
-    content: '';
-    background: 2% / 20% 100% repeat-x url(images/icon-star.svg);
-    background-repeat: repeat-x;
-    margin-left: 100px;
-    margin-top: 10px;
-    width: 119px;
-    height: 19px;
+    letter-spacing: 3px;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 119px;   
+    height: 18px;
+}
+.body_box__middle__icon{
+    margin-left:  29px;
+}
+.body_box__paragraph{
+    font-weight: bold;
+    color: hsl(300, 43%, 22%);
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.article_footer{
+.article_footer {
+    display: grid;
+    text-align: initial;
+    color: #fff;
+    font-size: 17px;
     margin-top: 49px;
     width: 328px;
     height: 776px;
 }
-.article_footer__box{
+.article_footer__box {
     background-color: hsl(300, 43%, 22%);
     width: 328px;
     height: 246px;
     border-radius: 8px;
     margin-bottom: 15px;
+}
+.footer_box__comment {
+    width: 256px;
+    height: 174px;
+    margin-left: 31px;
+    margin-top: 39px;
+}
+.footer_box__comment__profil {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+    font-weight: bold;
+    width: 169px;
+    height: 41px;
+}
+.footer_box__comment__profil__logo{
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 22px;
+    width: 42px;
+    height: 41px;
+}
+.footer_box__comment__profil__paragraph {
+    width: 106px;
+    height: 37px;
+}
+
+@media only screen and (min-width:1110px){
+    body {
+        font-family: 'League Spartan', sans-serif;
+        Font-size: 15px;
+        margin: 0;
+        padding: 0;
+        height: 800px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-position: left top, bottom;
+        background-repeat: no-repeat;
+    }   
 }
